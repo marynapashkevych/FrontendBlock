@@ -3,6 +3,11 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
 .center {
     text-align: center;
 }
@@ -18,17 +23,40 @@ body {
     font-size: 14px;
 }
 .title p {
+    font-family: 'Raleway', sans-serif;
     color: #30a3f0;
     font-size: 18px;
 }
 .title h1 {
     color: white;
+    font-family: 'Raleway', sans-serif;
     font-size: 45px;
+    font-weight: 800;
+    max-width: 720px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.element {
+    width: 1px;
+    height: 100px;
+    background-color: #2987c7;
+    margin: 0 auto;
+}
+.element-top {
+    margin-bottom: 29px;
+}
+.element-bottom {
+    margin-top: 32px;
 }
 .btn {
     color: #30a3f0;
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #30a3f0;
+    padding: 20px 42px;
+    border-radius: 5px;
 }
 .nav {
 
@@ -37,6 +65,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 20px;
+    margin-bottom: 27px;
 }
 .title-h2 {
     font-size: 30px;
