@@ -38,10 +38,26 @@ body {
     margin-right: 32px;
 }
 .info-right .info-item {
-    margin-left: 17px;
+    margin-left: 6px;
 }
 .info-link {
     text-decoration: none;
+}
+.register::before {
+    content: '/';
+    margin-right: 6px;
+}
+.info-link svg {
+    color: #30a3f0;
+    margin-right: 11px;
+}
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.nav-btn svg {
+    color: #444444;
 }
 .head {
     background-color: #fff;
@@ -50,6 +66,9 @@ body {
     justify-content: space-between;
     padding: 26px 40px 25px;
     margin-bottom: 220px;
+}
+.logo {
+    width: 158px;
 }
 .nav {
     list-style-type: none;
@@ -71,6 +90,9 @@ body {
     }
 .nav-item {
     margin-left: 8px;
+}
+.nav-item-btn {
+    margin-left: 21px;
 }
 .nav-link:hover {
     color: #30a3f0;
