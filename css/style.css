@@ -371,3 +371,43 @@ body {
     bottom: 0;
     display: none;
 }
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 70px 50px;
+    margin-top: 121px;
+    margin-bottom: 126px;
+}
+.grid .description {
+    margin-bottom: 0;
+}
+.grid h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+} 
+.grid-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-icon-min {
+    font-size: 24px;
+    width: 96px;
+    height: 96px;
+    background-size: 96px 96px;
+    flex-basis: 96px;
+    text-align: center;
+    line-height: 3.8;
+    margin: initial;
+    color: #c9c9c9;
+}
+.grid-line-text {
+    flex-basis: calc(100% - 126px);
+}
+.grid-line:hover .box-icon-min {
+    background-image: url(../img/bg-blue-1.png);
+    color: #fff;
+}
