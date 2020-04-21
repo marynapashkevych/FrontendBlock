@@ -194,6 +194,7 @@ body {
     font-size: 30px;
     font-weight: 800;
     text-transform: uppercase;
+    margin-bottom: 14px;
 }
 .title-h2 span {
     color: #30a3f0;
@@ -206,15 +207,25 @@ body {
 .line {
     display: block;
     width: 53px;
-    height: 16px;
+    height: 14px;
     background-image: url(../img/line.svg); 
     background-repeat: no-repeat;
 }
-.img {
-    display: flex;
+.line-center {
+    display: block;
+    width: 90px;
+    height: 16px;
+    background-image: url(../img/line1.png); 
+    background-repeat: no-repeat;
+    margin: 0 auto 30px;
 }
 .description {
     color: #707070;
+    line-height: 26px;
+}
+.page-gray .description {
+    max-width: 690px;
+    margin: 0 auto;
 }
 .background {
     padding-bottom: 111px;
@@ -281,4 +292,82 @@ body {
 }
 .box-text {
     max-width: 537px;
+}
+.page .description {
+    max-width: 690px;
+    margin: 0 auto;
+}
+.photo {
+    display: flex;
+}
+.photo-item {
+    overflow: hidden;
+    flex-basis: 20%;
+    height: 350px;
+    position: relative;
+}
+.photo-item img {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    z-index: -1;
+}
+.photo-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: calc(50% - 30px);
+    display: none;
+}
+.photo-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+.photo-text p {
+    color: #707070;
+    margin-bottom: 0;
+}
+.photo-item:hover {
+    background-color: rgba(34,34,34,0.8);
+}
+.photo-item:hover .photo-text{
+    display: block;
+}
+.photo-btn {
+    width: 60px;
+    height: 60px;
+    line-height: 4.5;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.photo-btn-item {
+    color: black;
+}
+.photo-btn:hover {
+    background-color: #30a3f0;
+}
+.photo-btn:hover .photo-btn-item {
+    color: white;
+}
+.photo-item:hover .photo-btn {
+    display: block;
+}
+.search {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    display: none;
 }
